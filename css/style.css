@@ -8,39 +8,190 @@
  4) 
 */
 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.hero-img {
+	height: 335px;
+	position:relative;
+	font-size: 0; /* 이미지와 이미지 사이 없애기 ex.코카콜라에서 */
+}
+.model {
+	position: absolute;
+	right:0;
+	bottom:0;
+	z-index: 10;
+}
+.bg {
+	position: absolute;
+	bottom:0;
+	width:100%;
+	justify-content: center;
+	background:rgv(0,111,225);
+	overflow: hidden;
+}
 .main-logo {
     display: flex;
     justify-content: center;
 }
 
 .main-nav {
-    background-color: black;
-}
+	    background-color: black;
+	    padding:.875rem 0;
+	    }
 .main-nav ul {/* li 들을 가로로 나란히 배치*/
-     display: flex;
-     flex-direction: row;
+     display: flex;      
+     flex-direction: row; 
+     justify-content: center;
+     column-gap:1rem;
+     
      }
 .main-nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: none;  
+}
+.main-nav a:hover {
+    color: #01ccff;
+    
+}
+/* ===========가운데: 문서의 중앙/본문 ============*/
+table {
+	width: 600px;
+	margin: 3rem auto;
+}
+table, tr, th, td {
+	border:1px solid #333; /* 테두리:두께 종류 색상  */
+	border-collapse:collapse; /* 테두리 선을 겹침 ==> 두줄 표시되면 한줄로 */
+	}
+caption {
+       margin: 0 0 1rem 0;	
+}
+.bold-text {
+	font-weight:bold;
+}
+th {
+	width: 25%;
+	font-weight:bold;
+	background-color: #ad8fad;
+}
+th.w75 {                     /* 가상의 라인설정 25:75   */
+	width: 75%;
 }
 
-.extra-nav {
-    color: white;
-    text-decoration: none;
+th, td {
+	padding: 16px 10px;
+	text-align: center;
+}
+.v-center {      
+	vertical-align:middle; /* 인라인요소, 테이블에서 수직정렬기준: 중앙 */
+	background-color: #ffeded;
+}
+.warning {
+	color:red;
+}
+/*================================about : */
+.page-map {
+	text-align: right;
+	max-width: 1536px;
+	margin:0 auto;
+	background-color:gold;
+	padding: .5rem 0;
+	font-size: .875rem;
+}
+
+.page-map span {
+	font-size: .825rem;
+	vertical-align: bottom;
+}
+
+.overview, .mc {
+	max-width: 800px;
+	margin:0 auto;
+}
+.sec-title {
+	text-align: center;
+	margin: .1.5rem 0;
+	font-weight:bold;
+	font-size:1.25rem; /*16px rlwns 20는 1.25배 */
+}
+.sec-title::first-letter {/* 의사요소()Pseudo Element,특정부분/일부분 */
+	background-color: grey;
+	font-size: 2rem;
+	padding: .0rem;
+}
+
+.cover-story, .profile-story { /* flex 컨테이너(=부모)*/
+	display: flex;
+	column-gap: 1.375rem;
+	justify-content: space-between;
+}
+.cover-story img, .profile-story img {
+	width: 100%;
+	object-fit: cover;
+}	
+.story P {
+	margin:0 0 1.5rem 0;
+}
+.swiper {
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+}
+.swiper-slide ul {
+	display: flex;
+	justify-content: center;
+	column-gap: 1rem;
+}
+.swiper-slide ul li {
+	flex:1 1 250px;
+}
+.swiper-slide ul li img {
+	width: 100%;
+	object-fit:cover;
+}
+.swiper-slide ul li p:nth-child(1) {
+	
+	font-size:.875rem;	
+}
+
+.extra-nav {   
+    background-color:#fafafa;
+    padding:.875rem 0;
+    border-top:1px solid #666;
+       
 }
 
 .extra-nav ul{
-    color: white;
-    text-decoration: none;
-}
-.extra-nav a {
+    display: flex;      
+     flex-direction: row; 
+     justify-content: center;
+     column-gap:1rem;
+    }
+.extra-nav a {  
     color: #666;
-    text-decoration: none;
+    text-decoration: none; 
+    font-size:.875rem 0 ; 
+}
+.extra-nav a:hover {  /* hand over : 마우스*/
+    text-decoration:underline;  
+    font-weight:bold;     
+}
+.footer {
+	background-color:black;	
+	color: #999;
 }
 .sub-logo {
 	text-align: center;
+	padding:.875rem 0 ;
 }
 .site-info p {
+	text-align: center;
+	margin: 1rem 0;
 	
 }

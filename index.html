@@ -6,7 +6,8 @@
 <title>SNL KOREA</title>
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-<link href="css/style.css" rel="stylesheet">
+<link href="css/style.css"  rel="stylesheet">
+
 <link rel="apple-touch-icon" sizes="57x57"
 	href="images/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60"
@@ -49,8 +50,13 @@
 	</div>
 
 	<div class="hero-img">
-		<img src="images/model.png" alt="신동엽"> <img
-			src="images/visual-wide.png" alt="나머지 출연자| 프로그램 커버 이미지">
+	<div class="model">
+		<img src="images/model.png" alt="신동엽" > 
+		</div>
+		<div class="bg">
+		<img
+			src="images/visual-wide.png"  alt="나머지 출연자| 프로그램 커버 이미지">
+			</div>
 	</div>
 
 	<!--  메뉴 vs 내비/내비게이션:웹-정보를 찾아가는 길을 안내하는 수단 -->
@@ -60,7 +66,7 @@
 			<!-- 구조화가 잘된 -->
 			<li><a href="#">처음으로 </a></li>
 
-			<li><a href="#">프로그램 소개</a></li>
+			<li><a href="about.html">프로그램소개</a></li>
 
 			<li><a href="#">방청안내</a></li>
 
@@ -74,33 +80,54 @@
 	<div class="main">
 		<!-- 주된내용,메인!(해당문서에서 가장 핵심적으로 전달하려는 내용 -->
 		<table>
+		<caption class="bold-text">입장요금안내</caption>
 			<tr>
-				<td>구분</td>
-				<td>솔로</td>
-				<td>커플</td>
-				<td>미성년자</td>
+				<th>구분</th>
+				<th>솔로</th>
+				<th>커플</th>
+				<th >미성년자</th>
 			</tr>
 			<tr>
-				<td>입장료</td>
+				<th>입장료</th>
 				<td>20,000원</td>
 				<td>30,000원</td>
-				<td rowspan="3">입장불가</td>
+				<td class="v-center light-red warning" rowspan="3">입장불가</td>
 			</tr>
 			<tr>
-				<td>부킹료</td>
+				<th>부킹료</th>
 				<td>50,000원</td>
 				<td>10,000원</td>
 				<!-- <td>입장불가</td>-->
 			</tr>
 			<tr>
-				<td>합계</td>
+				<th>합계</th>
 				<td>70,000원</td>
 				<td>40,000원</td>
 				<!-- <td>입장불가</td>-->
 			</tr>
-
 		</table>
-	</div>
+	
+		
+		<table id="casting">
+		<caption class="bold-text">요일별 출연진안내</caption>
+			<tr>
+				<th>요일</th>
+				<th class="w75">출연자</th>				
+			</tr>
+			<tr>
+				<td>월,화,수</td>
+				<td>신동엽,이동건</td>				
+			</tr>
+			<tr>
+				<td>목,금</td>
+				<td>박진영,이지연</td>				
+			</tr>
+			<tr>
+				<td>토,일</td>
+				<td>휴무</td>				
+			</tr>			
+		</table>
+   </div>	
 
 	<div class="extra-nav">
 		<!-- kebav-case:케밥 케이스 -->
@@ -117,20 +144,18 @@
 			<li><a href="#">고객센터</a></li>
 		</ul>
 	</div>
-
+	<div class="footer">
 	<div class="sub-logo">
 		<a href="#"> <img src="images/footer-logo.png" alt="">
 		</a>
 	</div>
 
-	<div class="">
-		<img src="images/.png" alt="">
-
-	</div>
+	
 
 	<div class="site-info">
 		<p>광주광역시 서구 경열로 3 (농성동 271-4) 한울직업전문학교|SNL코리아|광주</p>
 		<p>coptright&copy; SNL코리아.ALL RIGHTS RESERVED.</p>
+	</div>
 	</div>
 </body>
 </html>
